@@ -1,0 +1,27 @@
+<include file="public:header"/>  	
+    <if condition="$index_pins[index_pins] eq '1'">
+    <!-- start -->
+    <div>
+    	<div class="mt20 clearfix">
+        	<span class="fr"><a target="_blank" class="gray" href="?m=search">更多<samp>&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</samp></a></span>
+            <h2 class="fl"><span style="font-size:12px;"></span> <span class="red f16">每日精彩推荐</span></h2>
+        </div>
+    </div>
+    <div class="item_list infinite_scroll" style="min-height:600px;">
+    	<include file="public:goods_list"/>
+    </div>
+    <if condition="$show_sp eq 1">
+        <div id="more" class="center">
+            <a href="{:u('index/index',array('sp'=>2,'p'=>$p))}" hidefocus="true"></a>
+        </div>    	
+   	</if> 
+    <if condition="$page neq ''">
+    	<div id="page" class="page mt20 clearfix" style="display: none;">
+        	<span class="page_num">{$page}</span>
+        </div>
+    </if>
+    <!-- end -->
+	</if>
+    <div class="mt15"><script language="javascript" src="{:u('advert/index', array('id'=>6))}"></script></div>    
+	<load href="__ROOT__/statics/js/jquery/plugins/jquery.KinSlideshow-1.2.1.min.js" />
+<include file="public:footer"/>

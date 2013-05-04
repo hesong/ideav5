@@ -1,0 +1,8 @@
+User-Agent: Baiduspider
+Disallow: /admin.php
+Disallow: /config*
+Disallow: /statics/*
+Disallow: /includes/*
+Disallow: /data/*
+Disallow: /admin/*
+Disallow: .htaccess
