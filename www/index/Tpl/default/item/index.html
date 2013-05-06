@@ -41,7 +41,7 @@ var items_id="{$items_id}";
                     <p class="p_heart">
                     	<a onclick="javascript:;" class="like_it cursor pop_comm" iid="{$item.id}"><b class="red nums" id="like_num_{$item.id}">{$item.likes}</b></a><br />
                      	<if condition="$item.price neq '0.00'">
-                        <p style="margin-top:20px;"><a target="_blank" href="{:u('item/tao',array('id'=>$item['id']))}" class="red f16">去购买&gt;&gt;</a></p>
+                        <p style="margin-top:20px;"><a target="_blank" href="{:u('item/tao',array('id'=>$item['id']))}" class="buy_it red f16"></a></p>
                         </if>
                     </p>
                 </div>

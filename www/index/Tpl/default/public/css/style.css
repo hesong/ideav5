@@ -963,6 +963,13 @@ span.tag_title {
 .item_right {
 	width: 226px;
 }
+.buy_it {
+	background: url("../images/buy_it.gif") no-repeat scroll 0 0 transparent;
+	float: left;
+	height: 36px;
+	padding-left: 92px;
+	width: 90px;
+}
 /**********************商品评论**********************/
 #items_comments {
 	padding: 10px;
