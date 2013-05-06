@@ -861,7 +861,7 @@ class ucAction extends baseAction {
             setcookie(session_name(), '', time() - 42000, '/');
         }
         session_destroy();
-        header('Location:./');
+        header('Location:/');
         //header('Location:'.urldecode($_COOKIE['redirect']));
     }
 
