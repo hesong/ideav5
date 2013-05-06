@@ -298,6 +298,8 @@ class ucAction extends baseAction {
                 $this->ajaxReturn('data_create_error');
             }
             $data['add_time'] = time();
+			$data['last_time'] = time();
+			$data['status'] = 0;
             $author = isset($_POST['author']) ? $_POST['author'] : '';
 
             $data['sid'] = $items_site_mod->where("alias='" . $author . "'")->getField('id');
